@@ -10,6 +10,7 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "@i2d/nuxt-pdf-frame": "^0.3.0",
     "@mdi/font": "^7.4.47",
     "@vuetify/vite-plugin": "1.0.0-alpha.11",
     "nuxt": "^3.13.0",

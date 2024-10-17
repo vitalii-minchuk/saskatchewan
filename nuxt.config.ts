@@ -5,6 +5,7 @@ export default defineNuxtConfig({
   build: {
     transpile: ["vuetify"],
   },
+  modules: ["@i2d/nuxt-pdf-frame"],
   vite: {
     ssr: {
       noExternal: ["vuetify"],

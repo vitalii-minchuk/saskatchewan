@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@i2d/nuxt-pdf-frame':
+        specifier: ^0.3.0
+        version: 0.3.0(magicast@0.3.5)(rollup@4.24.0)(webpack-sources@3.2.3)
       '@mdi/font':
         specifier: ^7.4.47
         version: 7.4.47
@@ -617,6 +620,12 @@ packages:
   '@fastify/busboy@2.1.1':
     resolution: {integrity: sha512-vBZP4NlzfOlerQTnba4aqZoMhE/a9HY7HRqoOPaETQcSQuWEIyZMHGfVu6w9wGtGK5fED5qRs2DteVCjOH60sA==}
     engines: {node: '>=14'}
+
+  '@i2d/nuxt-pdf-frame@0.3.0':
+    resolution: {integrity: sha512-Fiwa6efIaEGIT552TNIruHab6MuqmbwRbrTvZ19XoBhFVKny5Nfc3VzwrutPBWbC7z+a3esblONx8Fh+fbXFUA==}
+
+  '@i2d/pdf-frame-vue@2.3.0':
+    resolution: {integrity: sha512-Pm6b6/0OkegKSflgfi8OiTDJKxbuZwWhRN2M83LSM+6RWt/UkZhBbsYbE3sirjL3ytAnIaqeIaRjksV6i1pb0g==}
 
   '@ioredis/commands@1.2.0':
     resolution: {integrity: sha512-Sx1pU8EM64o2BrqNpEO1CNLtKQwyhuXuqyfH7oGKCk+1a33d2r5saW8zNwm3j6BTExtjrv2BxTgzzkMwts6vGg==}
@@ -1875,6 +1884,10 @@ packages:
   human-signals@5.0.0:
     resolution: {integrity: sha512-AXcZb6vzzrFAUE61HnN4mpLqd/cSIwNQjtNWR0euPm6y0iqx3G4gOXaIDdtdDwZmhwe82LA6+zinmW4UBWVePQ==}
     engines: {node: '>=16.17.0'}
+
+  i2djs@5.3.0:
+    resolution: {integrity: sha512-pMNYJkRzGacdX44tM+uTG8cnjEehH1UydGnTx8dAiN06m1nzWW+iBuRNows9WStFE1xl/B4FRav9oOGlAJNPQg==}
+    engines: {node: '>=16.0.0'}
 
   ieee754@1.2.1:
     resolution: {integrity: sha512-dcyqhDvX1C46lXZcVqCpK+FtMRQVdIMN6/Df5js2zouUsqG7I6sFxitIC+7KYK29KdXOLHdu9zL4sFnoVQnqaA==}
@@ -3736,6 +3749,24 @@ snapshots:
 
   '@fastify/busboy@2.1.1': {}
 
+  '@i2d/nuxt-pdf-frame@0.3.0(magicast@0.3.5)(rollup@4.24.0)(webpack-sources@3.2.3)':
+    dependencies:
+      '@i2d/pdf-frame-vue': 2.3.0
+      '@nuxt/kit': 3.13.2(magicast@0.3.5)(rollup@4.24.0)(webpack-sources@3.2.3)
+    transitivePeerDependencies:
+      - magicast
+      - rollup
+      - supports-color
+      - typescript
+      - webpack-sources
+
+  '@i2d/pdf-frame-vue@2.3.0':
+    dependencies:
+      i2djs: 5.3.0
+      vue: 3.5.12
+    transitivePeerDependencies:
+      - typescript
+
   '@ioredis/commands@1.2.0': {}
 
   '@isaacs/cliui@8.0.2':
@@ -5256,6 +5287,8 @@ snapshots:
   human-signals@4.3.1: {}
 
   human-signals@5.0.0: {}
+
+  i2djs@5.3.0: {}
 
   ieee754@1.2.1: {}
 
