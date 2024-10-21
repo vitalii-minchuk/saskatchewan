@@ -2,7 +2,8 @@
 
 <template>
   <div>about</div>
-  <!-- <Testt3 /> -->
-  <!-- <Testt2 /> -->
-  <Testt />
+  <!-- <PdfJsViewer /> -->
+  <!-- <NuxtModuleViewer /> -->
+  <!-- <VuePdfEmbedViewer /> -->
+  <PdfObjectViewer />
 </template>
