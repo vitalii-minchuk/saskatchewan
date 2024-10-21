@@ -10,6 +10,20 @@ export default defineNuxtConfig({
     ssr: {
       noExternal: ["vuetify"],
     },
+    optimizeDeps: {
+      include: ["pdfjs-dist"],
+    },
+    build: {
+      rollupOptions: {
+        output: {
+          manualChunks(id) {
+            if (id.includes("pdf.worker.min.mjs")) {
+              return "pdf-worker";
+            }
+          },
+        },
+      },
+    },
   },
   compatibilityDate: "2024-10-14",
 });

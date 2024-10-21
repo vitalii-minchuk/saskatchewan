@@ -14,6 +14,7 @@
     "@mdi/font": "^7.4.47",
     "@vuetify/vite-plugin": "1.0.0-alpha.11",
     "nuxt": "^3.13.0",
+    "pdfjs-dist": "^4.7.76",
     "sass": "^1.79.5",
     "vue": "latest",
     "vue-pdf-embed": "^2.1.0",

@@ -2,6 +2,7 @@
 
 <template>
   <div>about</div>
-  <Testt2 />
-  <!-- <Testt /> -->
+  <!-- <Testt3 /> -->
+  <!-- <Testt2 /> -->
+  <Testt />
 </template>
